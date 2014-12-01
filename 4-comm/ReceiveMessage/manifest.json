@@ -1,0 +1,11 @@
+{
+	"app": {
+		"background": {
+			"scripts": [ "background.js" ]
+		}
+	},
+	"manifest_version": 2,
+	"name": "ReceiveMessage",
+	"version": "1.0.0",
+   "key": "MIIBIjAN12345biBmZAh2jStVre0fCnE4oDNDuQdlRBVzq6eyJYKxig1dKIuacAa/uOD3fElMSex7WtaAX3qaxnxiAM/KJr5cb8Ng13bqP+TcobPYVV74wNdE/TxpUj+3Oe599ZVxBlLrQ65fm3D+IuB8rwAx4Alb7vNIB2qgcHogtSxJEFfwi5HYmTbW0gKLB1ILmiZtbvviNUXatuW0hiwBZaBe7fU11pOiQrKcXF2zqOaVa4nX3wlTxW7KxZ9pfe+Q8r5B56lXyTzofjC/YI4jfZduxXkPIpwfD2T5tnP2T7EgJjMWglo0qgplVfZrFJwBw6w1cv1dsGtG5UbWrj5aQIDAQAB"
+}

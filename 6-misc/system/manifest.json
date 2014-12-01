@@ -1,0 +1,17 @@
+{
+	"app": {
+		"background": {
+			"scripts": [ "background.js" ]
+		}
+	},
+	"manifest_version": 2,
+	"name": "System",
+	"version": "1.0.0",
+	"permissions": [
+		"system.cpu",
+		"system.display",
+		"system.memory",
+		"system.network",
+		"system.storage"
+	]
+}

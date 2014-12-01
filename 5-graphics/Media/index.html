@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Media</title>
+	<link rel="import" href="lib/common.html">
+	<script src="Media.js"></script>
+	<style>
+		body, html {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			font-size: 12px;
+		}
+		table {
+			border-collapse: collapse;
+			height: 100%;
+			width: 100%;
+			margin: 0 auto;
+			position: absolute;
+		}
+		p {
+			margin-bottom: 2px;
+			margin-top: 2px;
+			margin-left: 5px;
+		}
+		td, tr {
+			height: 100%;
+		}
+		#toc {
+			width: 250px;
+			height: 100%;
+			overflow: auto;
+			border-right: 1px solid gray;
+			/*margin-left: 5px;*/
+		}
+		#tdtoc {
+			width: 250px;
+			height: 100%;
+		}
+		#content {
+			height: 100%;
+			overflow: auto;
+		}
+		#view {
+			padding: 10px;
+			font-size: 16px;
+		}
+		#heading {
+			margin-bottom: 8px;
+			margin-top: 4px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.thumbnail {
+			vertical-align: middle;
+			margin-right: 5px;
+			display: block;
+		}
+		.de {
+			font-weight: bold;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<link rel="import" href="stuff.html">
+	<table><tr>
+		<td id="tdtoc"><div id="toc"></div></td>
+		<td><div id="content"><div id="view"></div><p id="metadata"></p></div></td>
+	</tr></table>
+</body>
+</html>

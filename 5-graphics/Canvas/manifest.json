@@ -1,0 +1,17 @@
+{
+	"app": {
+		"background": {
+			"scripts": [ "background.js" ]
+		}
+	},
+	"manifest_version": 2,
+	"name": "Canvas Example",
+	"version": "1.0.0",
+	"permissions": [
+		{
+			"fileSystem": [
+				"write"
+			]
+		}
+	]
+}

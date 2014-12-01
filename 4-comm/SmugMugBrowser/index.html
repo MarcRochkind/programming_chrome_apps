@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SmugMugBrowser</title>
+	<link rel="import" href="lib/common.html">
+	<script src="SmugMugBrowser.js"></script>
+	<style>
+		body, html {
+			height: 100%;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		td {
+			vertical-align: top;
+			text-align: center;
+		}
+		.caption {
+			text-align: left;
+			font-size: 10px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		.big {
+			margin-left: 50px;
+			margin-top: 100px;
+			font-size: 20px;
+			text-align: left;
+		}
+		.collapsibleList li {
+			list-style-image: url('images/button.png');
+			cursor: default;
+		}
+
+		li.collapsibleListOpen {
+			list-style-image: url('images/button-open.png');
+			cursor: pointer;
+		}
+
+		li.collapsibleListClosed {
+			list-style-image: url('images/button-closed.png');
+			cursor: pointer;
+		}
+		li.category {
+			font-weight: bold;
+			margin-left: 0px;
+			padding: 0;
+		}
+		li.subcategory {
+			font-style: italic;
+			font-weight: normal;
+			margin-left: -30px;
+			padding: 0;
+		}
+		li.album {
+			font-style: normal;
+			font-weight: normal;
+			margin-left: -30px;
+			padding: 0;
+		}
+		#toolbar {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 282px;
+			height: 25px;
+			margin: 0;
+			margin-top: 6px;
+			margin-left: 8px;
+			overflow: hidden;
+			font-size: 10px;
+		}
+		#toc {
+			position: absolute;
+			top: 30px;
+			left: 0;
+			width: 300px;
+			height: 1px;
+			margin: 0;
+			overflow: auto;
+			font-size: 10px;
+		}
+		#album {
+			position: absolute;
+			top: 0;
+			left: 300px;
+			width: 400px;
+			height: 1px;
+			overflow: auto;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin: 0;
+		}
+		#imagecell {
+			position: absolute;
+			top: 0;
+			left: 720px;
+			width: 100px;
+			height: 1px;
+			overflow: auto;
+			text-align: center;
+			margin: 0;
+		}
+		#exifinfo {
+			text-align: left;
+			margin-left: 10px;
+			margin-top: 15px;
+			font-size: 10px;
+		}
+		.exif_field {
+			font-weight: bold;
+		}
+		.exif {
+			margin: 0;
+		}
+		#footer-left, #footer-right {
+			position: absolute;
+			bottom: 0;
+			width: 50%;
+			font-size: 9px;
+			text-align: left;
+			margin: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 4px;
+			border-top: 1px solid gray;
+		}
+		#footer-left {
+			left: 0;
+		}
+		#footer-right {
+			right: 0;
+			text-align: right;
+		}
+		h1 {
+			font-size: 12px;
+		}
+		.imagebutton {
+			outline: none;
+			margin: 0;
+			padding: 0;
+			width: 18px;
+			height: 18px;
+		}
+		#bigimage {
+		    margin-top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div id="toolbar">
+		<input type="image" src="images/refresh.png" class="imagebutton" id="refresh" />
+	</div>
+	<div id="toc"></div>
+	<div id="album">
+		<p class=big>After logging into SmugMug, you may have to
+		close the authorization window to continue with this app.</p>
+	</div>
+	<div id="imagecell">
+		<div id="image"></div>
+		<div id=exifinfo></div>
+	</div>
+	<p id=footer-left>©2014 Marc Rochkind. All rights reserved.
+	My website is <a href='http://basepath.com/' target=_blank>basepath.com</a>.</p>
+	<p id=footer-right></p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+   "app": {
+	  "background": {
+		 "scripts": [ "background.js" ]
+	  }
+   },
+   "manifest_version": 2,
+   "name": "Flickr",
+   "version": "1.0.0",
+	"permissions": [
+		"storage",
+		"identity",
+		"https://www.flickr.com/*",
+		"<all_urls>" // because there are lots of farms
+	]
+}

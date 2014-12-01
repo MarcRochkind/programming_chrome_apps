@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ImageResize</title>
+	<script src="ImageResize.js"></script>
+</head>
+<body>
+Original 2411x2411; reduced to 200x200
+<table cellspacing="0" cellpadding="5">
+<tr>
+<td>
+	<img src="boat.jpg" width="200" height="200" id="boat">
+	<br>
+	Reduced in HTML
+<td>
+	<img src="boat-200.jpg" width="200" height="200">
+	<br>
+	Reduced in Lightroom
+<tr>
+<td>
+	<svg height="200" width="200">
+		<image xlink:href="boat.jpg" x="0" y="0" height="200" width="200" />
+	</svg>
+	<br>
+	Reduced by SVG
+<td>
+	<canvas id="cvs" width="200" height="200" style='display:inline;'></canvas>
+	<br>
+	Reduced by Canvas
+</table>
+</body>
+</html>

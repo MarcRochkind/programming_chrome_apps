@@ -1,0 +1,20 @@
+{
+	"app": {
+	"background": {
+		"scripts": [ "background.js" ]
+	}
+	},
+	"manifest_version": 2,
+	"name": "GDrive",
+	"version": "1.0.0",
+	"permissions": [
+		"identity"
+	],
+	"key": "MIIBIj673jduejdfiekyBmHCq7djduejfkfiekc/qg6PJlm08OFu/Am/9R4JBKmH1+xsdDbjFhVS+DLmLW//g1XfwNGBldCEXvNXFNEsZwV6pA0wpfWF0uFGbzB/IqiGULQlD5bLMVMW3bATPPmk8d5D6M8Sbv7H5KFjztRRjaOHYIuRNE+fdzs3IZ95p2em22UsBiIe9iaoid7zkfegGPNvhu5eOZmltLh35eU+wV7pMzGhmGv3v5S6kDrj1PT59YL1ZB+J+v0FOtqGR547ChHXDp194mDF3WkVKYlWCGIivAv5DEDMA435QyyltEwIDAQAB",
+	"oauth2": {
+		"client_id": "25987637-17bpheujdkei97g3kj.apps.googleusercontent.com",
+		"scopes": [
+			"https://www.googleapis.com/auth/drive"
+		]
+	}
+}

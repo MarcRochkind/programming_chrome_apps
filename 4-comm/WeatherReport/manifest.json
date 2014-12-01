@@ -1,0 +1,18 @@
+{
+	"app": {
+		"background": {
+			"scripts": [ "background.js" ]
+		}
+	},
+	"manifest_version": 2,
+	"name": "WeatherReport",
+	"version": "1.0.0",
+	"permissions": [
+		"http://api.openweathermap.org/*" // for XMLHttpRequest
+	],
+	"sockets": { // for chrome.sockets.tcp
+		"tcp": {
+			"connect": "api.openweathermap.org:80"
+		}
+	}
+}

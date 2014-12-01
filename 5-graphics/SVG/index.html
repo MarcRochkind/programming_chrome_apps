@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>SVG Example</title>
+	<script src="SVG.js"></script>
+  </head>
+<body style='margin: 0;'>
+<svg width="510" height="510">
+	<defs>
+		<radialGradient id="circleGrad">
+			<stop offset="10%" stop-color="white" />
+			<stop offset="100%" stop-color="black" />
+		</radialGradient>
+	</defs>
+	<rect x="5" y="5" width="500" height="500" stroke-width="3"
+	  stroke="black" fill="#ddd" />
+	<circle cx="200" cy="310" r="150" fill="url(#circleGrad)"/>
+	<text font-size="50" font-family="Times" x="430" y="50"
+	  fill="white" stroke="black"
+	  transform="rotate(80 400,40)">
+		Some rotated text
+	</text>
+	<line x1="50" y1="100" x2="400" y2="450"  stroke-width="4"
+	  stroke="black" />
+</svg>
+</body>
+</html>

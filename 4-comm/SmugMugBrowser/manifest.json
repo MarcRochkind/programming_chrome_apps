@@ -1,0 +1,19 @@
+{
+   "app": {
+	  "background": {
+		 "scripts": [ "background.js" ]
+	  }
+   },
+   "manifest_version": 2,
+   "name": "SmugMugBrowser",
+   "version": "1.0.10",
+	"icons": {
+		"128": "SmugMugBrowser.png"
+	},
+	"permissions": [
+		"storage",
+		"identity",
+		"<all_urls>"
+	],
+	"description": "Browser for SmugMug galleries and photos"
+}

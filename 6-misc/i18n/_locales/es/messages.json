@@ -1,0 +1,10 @@
+{
+  "hello": {
+    "message": "Hola",
+    "description": "The word 'Hello', to appear in the main window."
+  },
+  "goodbye": {
+    "message": "Adiós",
+    "description": "The word 'Goodbye', to appear in the main window."
+  }
+}

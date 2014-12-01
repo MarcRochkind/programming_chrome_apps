@@ -1,0 +1,11 @@
+{
+	"app": {
+		"background": {
+			"scripts": ["background.js"]
+		}
+	},
+	"manifest_version": 2,
+	"name": "I18N",
+	"version": "1.0.0",
+	"default_locale": "en"
+}

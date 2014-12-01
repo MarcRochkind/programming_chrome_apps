@@ -1,0 +1,20 @@
+{
+	"app": {
+		"background": {
+			"scripts": [ "background.js" ]
+		}
+	},
+	"manifest_version": 2,
+	"name": "SimpleEditor",
+	"version": "1.0.0",
+	"permissions": [
+		{
+			"fileSystem": [
+				"write",
+				"directory",
+				"retainEntries"
+			]
+		},
+		"storage"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"app": {
+	"background": {
+		"scripts": [ "background.js" ]
+	}
+	},
+	"manifest_version": 2,
+	"name": "Bluetooth",
+	"version": "1.0.0",
+	"bluetooth": {
+		"uuids": [ "1105", "1106" ],
+		"socket": true
+	}
+}

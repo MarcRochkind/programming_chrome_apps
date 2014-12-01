@@ -1,0 +1,14 @@
+{
+	"app": {
+		"background": {
+			"scripts": [ "background.js" ]
+		}
+	},
+	"manifest_version": 2,
+	"name": "FBphotos",
+	"version": "1.0.0",
+	"permissions": [
+		"identity",
+		"<all_urls>" // because there are lots of farms
+	]
+}

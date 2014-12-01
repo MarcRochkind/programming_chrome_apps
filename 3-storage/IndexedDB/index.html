@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>IndexedDB</title>
+	<script src="lib/Dialogs.js"></script>
+	<script src="IndexedDB.js"></script>
+</head>
+<body>
+	<label for="search">Last:</label>
+	<input type="text" id="search-key">
+	<button id="search">Search</button>
+	<hr>
+	<button id="prev">Prev</button>
+	<button id="next">Next</button>
+	<button id="clear" style='margin-left: 40px;'>Clear</button>
+	<button id="delete">Delete</button>
+	<button id="save">Save</button>
+	<p>
+	<input type="text" id="field-first">
+	<input type="text" id="field-last">
+	<p>
+	<input type="text" id="field-street" size="30">
+	<p>
+	<input type="text" id="field-city">,
+	<input type="text" id="field-state">
+	<input type="text" id="field-zip" size="5">
+	<p>
+	<input type="text" id="field-email" size="50">
+	<input type="hidden" id="field-primaryKey">
+	<hr>
+	<button id="delete_db">Delete Database</button>
+	<button id="import">Import...</button>
+	<button id="export">Export...</button>
+	<button id="count">Count</button>
+	<p id="message">&nbsp;</p>
+</body>
+</html>

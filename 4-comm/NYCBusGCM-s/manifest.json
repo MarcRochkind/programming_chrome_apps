@@ -1,0 +1,18 @@
+{
+	"app": {
+		"background": {
+			"scripts": [
+				"background.js",
+				"lib/Ajax.js"
+			]
+		}
+	},
+	"manifest_version": 2,
+	"name": "NYCBusGCM",
+	"version": "1.0.0",
+	"permissions": [
+		"gcm",
+		"storage"
+		"<all_urls>"
+	]
+}

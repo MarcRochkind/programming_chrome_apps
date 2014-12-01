@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>NYCBusWS</title>
+	<link rel="import" href="lib/common.html">
+	<script src="NYCBusWS.js"></script>
+	<style>
+		body, html {
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			margin-top: 5px;
+		}
+		#results {
+			height: 85%;
+			width: 95%;
+			margin: 0 auto;
+			padding: 5px;
+			overflow: auto;
+			border: 1px solid gray;
+		}
+		#message {
+			margin-left: 10px;
+		}
+		#update {
+			float: right;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<span id="message">&nbsp;</span>
+	<button id="update">Update</button>
+	<div id="results"></div>
+</body>
+</html>
